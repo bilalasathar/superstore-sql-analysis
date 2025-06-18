@@ -1,4 +1,4 @@
--- Query 2: Top Cities by Total Orders
+-- 2. Top Cities by Total Sales
 SELECT  
   "City",
   COUNT(DISTINCT "Order ID") AS Total_Orders
