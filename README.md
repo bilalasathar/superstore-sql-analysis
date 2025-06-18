@@ -1,45 +1,49 @@
 # 🛒 Superstore SQL Analysis
 
-This project presents a SQL-based data analysis of the popular Superstore dataset using **DBeaver** with a **SQLite database**. The objective is to extract key business insights from retail data through well-structured SQL queries.
+This project showcases SQL-based data analysis using the popular Superstore dataset. Queries were executed in **DBeaver** using a **SQLite** database setup. The goal was to extract key business insights related to customer behavior, sales performance, and order patterns.
 
 ---
 
 ## 📌 Objectives
 
-- Analyze customer segments and their order behavior
-- Identify top-performing cities and regions
-- Examine delivery delays and shipping performance
-- Understand seasonal order trends and revenue patterns
-- Use SQL to solve real-world business problems
+- Identify top-performing customers and cities
+- Analyze customer segments and their contribution to revenue
+- Understand order frequency patterns among customers
+- Rank customers by activity level using window functions
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- **SQL Engine**: SQLite  
-- **IDE**: [DBeaver](https://dbeaver.io/)  
-- **Techniques Used**:  
-  - Aggregations (`SUM`, `COUNT`, `AVG`)  
-  - Filtering (`WHERE`, `HAVING`)  
-  - Grouping (`GROUP BY`)  
-  - Sorting and Ranking (`ORDER BY`, `RANK() OVER`)  
-  - Window Functions  
-  - Date manipulation (`JULIANDAY`, `STRFTIME`)  
+- **SQL Engine**: SQLite
+- **IDE**: DBeaver
+- **Techniques Used**:
+  - Aggregations: `SUM`, `COUNT`, `ROUND`
+  - Grouping: `GROUP BY`, `ORDER BY`
+  - Filtering: `HAVING`, `LIMIT`
+  - Window Functions: `RANK() OVER`
+  - Subqueries
 
 ---
 
-## 📊 Sample Business Questions & Query Coverage
+## 📁 Dataset
+
+- **Name**: `superstore.csv`
+- **Source**: [Kaggle - Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+- Contains: Orders, Ship Mode, Customer Info, Segments, Cities, and Sales data
+
+---
+
+## 📊 Business Questions & Query Coverage
 
 | No. | Business Question | Query Description |
 |-----|-------------------|--------------------|
 | 1 | Who are the top 10 most frequent customers? | Counts unique orders per customer |
-| 2 | Which cities have the most orders? | Groups orders by city |
-| 3 | How are customer segments distributed? | Order breakdown by customer type |
+| 2 | Which cities have the most orders? | Groups order count by city |
+| 3 | How are customer segments distributed? | Order breakdown by segment |
 | 4 | How many repeat vs one-time customers? | Groups customers by order count |
-| 5 | Who are the top-ranked customers? | Uses `RANK()` window function |
-| 6 | Which segment generates highest revenue? | Uses `SUM(Sales)` per segment |
-| 7 | Which cities generate the most revenue? | Sales breakdown by city |
-| 8 | What's the average shipping delay? | Date diff using `JULIANDAY` |
-| 9 | What are the monthly order trends? | Uses `STRFTIME()` to group by month |
+| 5 | Who are the top-ranked customers? | Uses `RANK()` to sort by total orders |
+| 6 | Which segment generates highest revenue? | Aggregates `SUM(Sales)` by segment |
+| 7 | Which cities generate the most revenue? | Aggregates `SUM(Sales)` by city |
 
 ---
