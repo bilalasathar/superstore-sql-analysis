@@ -1,4 +1,4 @@
--- Query 3: Customer Segment Breakdown
+-- 3. Customer Segment Breakdown
 SELECT 
   "Segment",
   COUNT(DISTINCT "Order ID") AS total_orders
