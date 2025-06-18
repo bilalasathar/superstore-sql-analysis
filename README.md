@@ -24,24 +24,6 @@ This project is a SQL-based data analysis of the popular Superstore dataset. Que
   - `RANK()` window function
   - `CASE WHEN` and subqueries
 
----
-
-## 📁 Project Structure
-
-superstore-sql-analysis/
-│
-├── /queries/ # Individual query files
-│ ├── top_customers.sql
-│ ├── top_cities_by_orders.sql
-│ ├── segment_order_breakdown.sql
-│ ├── repeat_vs_one_time.sql
-│ ├── rank_customers.sql
-│ ├── revenue_by_segment.sql
-│ ├── sales_by_city.sql
-│
-├── superstore_analysis_all_queries.sql # Full script with all 7 queries
-├── README.md # This file
-
 
 ## 📊 Business Questions & Query Coverage
 
