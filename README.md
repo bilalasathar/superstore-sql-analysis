@@ -25,3 +25,11 @@ This is a SQL-based data analysis project using the popular Superstore dataset. 
 ---
 
 ## 📁 Project Structure
+
+## 📊 Sample Business Questions
+
+- Which customer segment generates the highest revenue?
+- What is the average shipping delay per shipping mode?
+- Who are the top 10 most frequent customers?
+- Which cities have the highest sales volume?
+- Is there a seasonal trend in order volume?
