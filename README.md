@@ -57,6 +57,31 @@ superstore-sql-analysis/
 
 ---
 
+## 📸 Sample Query Outputs
+
+### 1️⃣ Top 10 Customers by Orders
+![Top Customers](images/top_customers_output.png)
+
+### 2️⃣ Top Cities by Total Orders
+![Top Cities](images/city_orders_output.png)
+
+### 3️⃣ Customer Segment Breakdown
+![Segment Breakdown](images/segment_breakdown_output.png)
+
+### 4️⃣ Repeat vs One-Time Customers
+![Repeat Customers](images/repeat_customers_output.png)
+
+### 5️⃣ Ranked Customers by Orders
+![Ranked Customers](images/ranked_customers_output.png)
+
+### 6️⃣ Revenue by Customer Segment
+![Segment Revenue](images/segment_revenue_output.png)
+
+### 7️⃣ Revenue by City
+![City Revenue](images/city_sales_output.png)
+
+---
+
 ## 📬 Contact
 
 Created by [Bilal Abdul Sathar](https://www.linkedin.com/in/bilalas/)  
